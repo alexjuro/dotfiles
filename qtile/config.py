@@ -32,6 +32,17 @@ from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy
 from libqtile.utils import guess_terminal
 
+#Colors
+colors = {
+    "gunmetal": "#092E39ff",
+    "rich-black": "#061827ff",
+    "tea-green": "#D2ECB4ff",
+    "celadon": "#94DBB4ff",
+    "mint": "#19CAA8ff",
+    "dark-cyan": "#0E8C80ff",
+    "celadon-2": "#B2E1B5ff",
+}
+
 mod = "mod4"
 terminal = guess_terminal()
 
@@ -116,8 +127,8 @@ for i in groups:
 layout_theme = {
     "border_width": 2,
     "margin": 6,
-    "border_focus": "89cff0",
-    "border_normal": "000000",
+    "border_focus": colors["celadon-2"],
+    "border_normal": colors["gunmetal"],
 }
 
 layouts = [
@@ -136,17 +147,7 @@ layouts = [
     # layout.Zoomy(),
 ]
 
-#Colors
-colors = {
-    "blue": "#89cff0",
-    "active": "#899cf0",
-    "green": "#89f0aa",
-    "red": "#ff3333",
-    "purple": "#e9bee2",
-}
-
 widget_defaults = dict(
-    # font = "CaskaydiaCove Nerd Font",
     font="JetBrainsMono Nerd Font",
     fontsize=16,
     padding=3,
@@ -159,60 +160,64 @@ screens = [
             [
                 widget.Spacer(length= 10),
                 widget.TextBox(
-                    "󱂬 ",
-                    foreground = colors["blue"],
+                    "󰥔 ",
+                    foreground = colors["celadon"],
                     ),
+                widget.Clock(
+                    format="%d.%m %a   %I:%M %p",
+                    ),
+
+                widget.Spacer(),
                 widget.GroupBox(
                     highlight_method='block', 
-                    active = "FFFFFF",
+                    active = colors["celadon"],
                     visible_groups = ['1', '2', '3', '4', '5', '6', '7', '8'],
-                    borderwidth = 4,
-                    block_highlight_text_color = "000000",
-                    this_screen_border = "FFFFFF",
-                    this_current_screen_border = "FFFFFF",
+                    borderwidth = 8,
+                    block_highlight_text_color = colors["rich-black"],
+                    this_screen_border = colors["celadon"],
+                    this_current_screen_border = colors["celadon"],
                     rounded=False,
                     ),
                 widget.Spacer(),
-                widget.Clock(
-                    format="%I:%M %p", 
-                    ),
-                widget.Spacer(),
+
                 # change Layout with Mod+Space
                 widget.KeyboardLayout(
                     configured_keyboards=['de', 'us'], 
                     display_map= {'de': 'de', 'us': 'us'},
-                    foreground = colors["blue"],
+                    foreground = colors["celadon"],
                     ),
+
+                widget.Spacer(length = 20),
                 widget.TextBox(
-                    " /   ",
-                    foreground = colors["blue"]
+                    " ",
+                    foreground = colors["celadon"]
                     ),
                 widget.Wlan(
                     format = '{essid}'
                     ),
+
+                widget.Spacer(length = 20),
                 widget.TextBox(
-                    " /   ", 
-                    foreground = colors["blue"],
-                    ),
-                widget.CPU(format='{load_percent}%'),
-                widget.TextBox(
-                    " /   ",
-                    foreground = colors["blue"],
+                    " ",
+                    foreground = colors["celadon"],
                     ),
                 widget.PulseVolume(),
+
+                widget.Spacer(length = 20),
                 widget.TextBox(
-                    " /   ", 
-                    foreground = colors["blue"],
+                    " ", 
+                    foreground = colors["celadon"],
                     ),
                 widget.Battery(format="{percent: 2.0%}"),
                 # widget.QuickExit(),
                 widget.Spacer(length= 10)
             ],
-            24,
+            28,
+            background = colors["rich-black"],
             # border_width=[2, 0, 2, 0],  # Draw top and bottom borders
             # border_color=["ff00ff", "000000", "ff00ff", "000000"]  # Borders are magenta
         ),
-        wallpaper= '~/.config/qtile/wallpaper.jpg',
+        wallpaper= '~/.config/qtile/wallpaper.png',
         wallpaper_mode= 'fill',
     ),
 ]

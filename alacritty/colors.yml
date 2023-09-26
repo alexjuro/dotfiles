@@ -1,0 +1,55 @@
+#Colors config which is imported in alacritty.yml
+#cool color schemes: https://gogh-co.github.io/Gogh/
+
+colors:
+  primary:
+    background: "#061827"
+    foreground: "#FDF0ED"
+    bright_foreground: "#ffffff"
+  cursor:
+    text: CellBackground
+    cursor: CellForeground
+  vi_mode_cursor:
+    text: CellBackground
+    cursor: CellForeground
+  search:
+    matches:
+      foreground: "#44475a"
+      background: "#50fa7b"
+    focused_match:
+      foreground: "#44475a"
+      background: "#ffb86c"
+  footer_bar:
+    background: "#282a36"
+    foreground: "#f8f8f2"
+  hints:
+    start:
+      foreground: "#282a36"
+      background: "#f1fa8c"
+    end:
+      foreground: "#f1fa8c"
+      background: "#282a36"
+  line_indicator:
+    foreground: None
+    background: None
+  selection:
+    text: CellForeground
+    background: "#44475a"
+  normal:
+    black: "#16161C"
+    red: "#E95678"
+    green: "#29D398"
+    yellow: "#FAB795"
+    blue: "#26BBD9"
+    magenta: "#EE64AE"
+    cyan: "#59E3E3"
+    white: "#FADAD1"
+  bright:
+    black: "#232530"
+    red: "#EC6A88"
+    green: "#3FDAA4"
+    yellow: "#FBC3A7"
+    blue: "#3FC6DE"
+    magenta: "#F075B7"
+    cyan: "#6BE6E6"
+    white: "#FDF0ED"
