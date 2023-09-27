@@ -97,6 +97,7 @@ keys = [
     #Custom
     Key([mod], "t", lazy.spawn("chromium"), desc = "spawns firefox"),
     Key([mod], "f", lazy.spawn("rofi -show drun"), desc = "spawns rofi"),
+    Key([mod], "c", lazy.spawn("code"), desc = "spawns vscode"),
 ]
 
 groups = [Group(i) for i in "123456789"]
