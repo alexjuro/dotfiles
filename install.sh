@@ -1,6 +1,6 @@
 #!/bin/sh
 sudo pacman -Syu
-sudo pacman -S python3 qtile rofi code picom alacritty starship tlp --noconfirm
+sudo pacman -S qtile python3 picom alacritty nerd-fonts python-psutil xorg-setxkbmap rofi starship python-iwlib code tlp --noconfirm
 
 mkdir ~/.config/alacritty
 mkdir ~/.config/qtile
