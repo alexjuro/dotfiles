@@ -98,6 +98,7 @@ keys = [
     Key([mod], "t", lazy.spawn("chromium"), desc = "spawns firefox"),
     Key([mod], "f", lazy.spawn("rofi -show drun"), desc = "spawns rofi"),
     Key([mod], "c", lazy.spawn("code"), desc = "spawns vscode"),
+    Key([mod], "v", lazy.spawn("nautilus"), desc = "spawns the Gnome File Manager"),
 ]
 
 groups = [Group(i) for i in "123456789"]
