@@ -1,5 +1,7 @@
 # dotfiles
 
+Install Arch with Gnome Enviroment
+
 1. Clone the project
 2. make the install.sh executable with
     chmod u+x ./install.sh
