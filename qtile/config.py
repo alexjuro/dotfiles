@@ -203,7 +203,8 @@ screens = [
                     " ",
                     foreground = colors["celadon"],
                     ),
-                widget.PulseVolume(),
+                # widget.PulseVolume(),
+                widget.Volume(),
 
                 widget.Spacer(length = 20),
                 widget.TextBox(
