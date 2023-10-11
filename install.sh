@@ -1,13 +1,13 @@
 #!/bin/sh
 sudo pacman -Syu
-sudo pacman -S qtile python3 picom alacritty nerd-fonts python-psutil xorg-setxkbmap rofi starship python-iwlib code tlp alsa-utils discord --noconfirm
+sudo pacman -S chromium qtile python3 picom alacritty nerd-fonts python-psutil xorg-setxkbmap rofi starship python-iwlib code tlp alsa-utils discord --noconfirm
 
 mkdir ~/.config/alacritty
 mkdir ~/.config/qtile
 mkdir ~/.config/picom
 mkdir ~/.config/rofi
 
-cp ./rofi/config.rasi ~/.config/config.rasi
+cp ./rofi/config.rasi ~/.config/rofi/config.rasi
 cp ./alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
 cp ./alacritty/colors.yml ~/.config/alacritty/colors.yml
 cp ./picom/picom.conf ~/.config/picom/picom.conf
