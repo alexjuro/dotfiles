@@ -166,7 +166,7 @@ screens = [
                     foreground = colors["celadon"],
                     ),
                 widget.Clock(
-                    format="%d.%m %a   %I:%M %p",
+                    format="%a, %d.%m  %I:%M %p",
                     ),
 
                 widget.Spacer(),
