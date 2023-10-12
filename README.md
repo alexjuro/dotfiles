@@ -21,6 +21,6 @@ Install Arch with Gnome Enviroment
 6. Open VSCode and disbale the Menu Bar under View -> Apperance -> Menu Bar
 7. install the Gruvbox Theme
 8. Use this to connect to Eduroam:
-    nmcli con add type wifi con-name <id> ssid eduroam wifi-sec.key-mgmt wpa-eap 802-1x.identity <kuerzel>@fh-muenster.de 802-1x.password <passwort> 802-1x.system-ca-certs yes 802-1x.domain-suffix-match radius2.fh-muenster.de 802-1x.eap peap 802-      1x.phase2-auth mschapv2
+    nmcli con add type wifi con-name ...id... ssid eduroam wifi-sec.key-mgmt wpa-eap 802-1x.identity ...kuerzel...@fh-muenster.de 802-1x.password ...passwort... 802-1x.system-ca-certs yes 802-1x.domain-suffix-match radius2.fh-muenster.de 802-1x.eap peap 802-1x.phase2-auth mschapv2
 
    replace id with eduroam and the other <> with your personal stuff
