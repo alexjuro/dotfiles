@@ -7,4 +7,4 @@ mkdir ~/.config/qtile
 mkdir ~/.config/picom
 mkdir ~/.config/rofi
 
-chmod u+x copyConfig.sh
+chmod u+x ./copyConfig.sh
