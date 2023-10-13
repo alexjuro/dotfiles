@@ -15,7 +15,8 @@ Install Arch with Gnome Enviroment
 2. make the install.sh executable with
    chmod u+x ./install.sh
    execute it with ./install.sh
-3. vim ~/.bashrc
+3. execute ./copyConfig.sh to apply the theme
+4. vim ~/.bashrc
    paste at the end: eval "$(starship init bash)"
 5. Log Out and log into Qtile
 6. Open VSCode and disbale the Menu Bar under View -> Apperance -> Menu Bar
