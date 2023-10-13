@@ -7,11 +7,4 @@ mkdir ~/.config/qtile
 mkdir ~/.config/picom
 mkdir ~/.config/rofi
 
-cp ./rofi/config.rasi ~/.config/rofi/config.rasi
-cp ./alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
-cp ./alacritty/colors.yml ~/.config/alacritty/colors.yml
-cp ./picom/picom.conf ~/.config/picom/picom.conf
-cp ./qtile/autostart.sh ~/.config/qtile/autostart.sh
-cp ./qtile/config.py ~/.config/qtile/config.py
-cp ./qtile/wallpaper.png ~/.config/qtile/wallpaper.png
-cp ./starship.toml ~/.config/starship.toml
+chmod u+x ./copyConfig.sh
