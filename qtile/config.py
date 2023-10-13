@@ -95,10 +95,10 @@ keys = [
     Key([], "XF86AudioRaiseVolume", lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@ +5%")),
 
     #Custom
-    Key([mod], "t", lazy.spawn("chromium"), desc = "spawns firefox"),
+    Key([mod], "j", lazy.spawn("chromium"), desc = "spawns chromium"),
     Key([mod], "f", lazy.spawn("rofi -show drun"), desc = "spawns rofi"),
-    Key([mod], "c", lazy.spawn("code"), desc = "spawns vscode"),
-    Key([mod], "v", lazy.spawn("nautilus"), desc = "spawns the Gnome File Manager"),
+    Key([mod], "l", lazy.spawn("code"), desc = "spawns vscode"),
+    Key([mod], "k", lazy.spawn("nautilus"), desc = "spawns the Gnome File Manager"),
 ]
 
 groups = [Group(i) for i in "123456789"]
