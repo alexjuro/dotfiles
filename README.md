@@ -25,3 +25,7 @@ Install Arch with Gnome Enviroment
     nmcli con add type wifi con-name ...id... ssid eduroam wifi-sec.key-mgmt wpa-eap 802-1x.identity ...kuerzel...@fh-muenster.de 802-1x.password ...passwort... 802-1x.system-ca-certs yes 802-1x.domain-suffix-match radius2.fh-muenster.de 802-1x.eap peap 802-1x.phase2-auth mschapv2
 
    replace id with eduroam and the other ...x.... with your personal stuff
+
+
+#usefull commands
+1. xrandr --output eDP-1 --primary --mode 1920x1080 --output DP-1-1 --mode 1920x1080 --right-of eDP-1
