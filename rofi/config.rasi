@@ -9,12 +9,12 @@ configuration {
 @theme "/dev/null"
 
 * {
-  bg: #05131f;
-  bg-alt: #051623;
-  bg-selected: #092E39;
+  bg: #141414;
+  bg-alt: #161616;
+  bg-selected: #231834;
 
-  fg: #94DBB4;
-  fg-alt: #76af90;
+  fg: #9b80c3;
+  fg-alt: #6c5aa8;
 
   
   border: 0;

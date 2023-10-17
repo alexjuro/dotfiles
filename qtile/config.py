@@ -34,7 +34,7 @@ from libqtile.utils import guess_terminal
 
 #Colors
 colors = {
-    "black": "#1a1a1a",
+    "black": "#141414",
     "white": "#ffffff",
     "accent": "#9b80c3",
 }
