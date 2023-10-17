@@ -34,13 +34,9 @@ from libqtile.utils import guess_terminal
 
 #Colors
 colors = {
-    "gunmetal": "#092E39ff",
-    "rich-black": "#061827ff",
-    "tea-green": "#D2ECB4ff",
-    "celadon": "#94DBB4ff",
-    "mint": "#19CAA8ff",
-    "dark-cyan": "#0E8C80ff",
-    "celadon-2": "#B2E1B5ff",
+    "black": "#1a1a1a",
+    "white": "#ffffff",
+    "accent": "#9b80c3",
 }
 
 mod = "mod4"
@@ -129,8 +125,8 @@ for i in groups:
 layout_theme = {
     "border_width": 2,
     "margin": 6,
-    "border_focus": colors["celadon-2"],
-    "border_normal": colors["gunmetal"],
+    "border_focus": colors["white"],
+    "border_normal": colors["black"],
 }
 
 layouts = [
@@ -163,7 +159,7 @@ screens = [
                 widget.Spacer(length= 10),
                 widget.TextBox(
                     "󰥔 ",
-                    foreground = colors["celadon"],
+                    foreground = colors["accent"],
                     ),
                 widget.Clock(
                     format="%a, %b %d  %I:%M %p",
@@ -172,12 +168,12 @@ screens = [
                 widget.Spacer(),
                 widget.GroupBox(
                     highlight_method='block', 
-                    active = colors["celadon"],
-                    visible_groups = ['1', '2', '3', '4', '5', '6', '7', '8'],
+                    active = colors["accent"],
+                    visible_groups = ['1', '2', '3', '4', '5'],
                     borderwidth = 8,
-                    block_highlight_text_color = colors["rich-black"],
-                    this_screen_border = colors["celadon"],
-                    this_current_screen_border = colors["celadon"],
+                    block_highlight_text_color = colors["black"],
+                    this_screen_border = colors["accent"],
+                    this_current_screen_border = colors["accent"],
                     rounded=False,
                     ),
                 widget.Spacer(),
@@ -186,13 +182,13 @@ screens = [
                 widget.KeyboardLayout(
                     configured_keyboards=['de', 'us'], 
                     display_map= {'de': 'de', 'us': 'us'},
-                    foreground = colors["celadon"],
+                    foreground = colors["accent"],
                     ),
 
                 widget.Spacer(length = 20),
                 widget.TextBox(
                     " ",
-                    foreground = colors["celadon"]
+                    foreground = colors["accent"],
                     ),
                 widget.Wlan(
                     format = '{essid}'
@@ -201,7 +197,7 @@ screens = [
                 widget.Spacer(length = 20),
                 widget.TextBox(
                     " ",
-                    foreground = colors["celadon"],
+                    foreground = colors["accent"],
                     ),
                 # widget.PulseVolume(),
                 widget.Volume(),
@@ -209,18 +205,18 @@ screens = [
                 widget.Spacer(length = 20),
                 widget.TextBox(
                     " ", 
-                    foreground = colors["celadon"],
+                    foreground = colors["accent"],
                     ),
                 widget.Battery(format="{percent: 2.0%}"),
                 # widget.QuickExit(),
                 widget.Spacer(length= 10)
             ],
             28,
-            background = colors["rich-black"],
+            background = colors["black"],
             # border_width=[2, 0, 2, 0],  # Draw top and bottom borders
             # border_color=["ff00ff", "000000", "ff00ff", "000000"]  # Borders are magenta
         ),
-        wallpaper= '~/.config/qtile/wallpaper.png',
+        wallpaper= '~/.config/qtile/moon.png',
         wallpaper_mode= 'fill',
     ),
 ]
