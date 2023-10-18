@@ -3,7 +3,7 @@
 
 ## basic arch installation
 **1.** install with `archinstall`
-2. when asked, select:
+**2.** when asked, select:
     - `ext4`
     - `no home`
     - `no swap`
@@ -26,7 +26,10 @@
 ## some useful commands
 - connect to eduroam:
     ```
-    nmcli con add type wifi con-name ...id... ssid eduroam wifi-sec.key-mgmt wpa-eap 802-1x.identity ...kuerzel...@fh-muenster.de 802-1x.password ...passwort... 802-1x.system-ca-certs yes 802-1x.domain-suffix-match radius2.fh-muenster.de 802-1x.eap peap 802-1x.phase2-auth mschapv2
+    nmcli con add type wifi con-name ...id... ssid eduroam wifi-sec.key-mgmt wpa-eap
+    802-1x.identity ...kuerzel...@fh-muenster.de 802-1x.password ...passwort...
+    802-1x.system-ca-certs yes 802-1x.domain-suffix-match radius2.fh-muenster.de
+    802-1x.eap peap 802-1x.phase2-auth mschapv2
     ```
     - replace ...id... with `eduroam`
     - replace ...kuerzel... with your id
@@ -34,6 +37,7 @@
     
 - display settings:
     ```
-    xrandr --output eDP-1 --primary --mode 1920x1080 --output DP-1-1 --mode 1920x1080 --right-of eDP-1
+    xrandr --output eDP-1 --primary --mode 1920x1080
+    --output DP-1-1 --mode 1920x1080 --right-of eDP-1
     ```
 
