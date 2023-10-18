@@ -2,8 +2,8 @@
 # dotfiles
 
 ## basic arch installation
-**1.** install with `archinstall`
-**2.** when asked, select:
+1. install with `archinstall`
+2. when asked, select:
     - `ext4`
     - `no home`
     - `no swap`
