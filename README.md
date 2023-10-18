@@ -19,7 +19,7 @@
 5. execute `vim ~/.bashrc`
 6. paste `eval "$(starship init bash)"` at the end of it
 7. log out and log into Qtile
-8. open code and disable the menu bashrc with
+8. open code and disable the menu bar with
     > View -> Apperance -> Menu Bar
 9. install the gruvbox theme
 
