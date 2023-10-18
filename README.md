@@ -21,7 +21,7 @@
 7. log out and log into Qtile
 8. open code and disable the menu bar with
     > View -> Apperance -> Menu Bar
-9. install the gruvbox theme
+9. install the GitHub Dark Default theme
 
 ## some useful commands
 - connect to eduroam:
