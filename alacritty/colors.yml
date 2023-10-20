@@ -3,7 +3,7 @@
 
 colors:
   primary:
-    background: "#061827"
+    background: "#1a1a1a"
     foreground: "#FDF0ED"
     bright_foreground: "#ffffff"
   cursor:
