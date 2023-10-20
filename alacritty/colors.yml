@@ -1,5 +1,6 @@
 #Colors config which is imported in alacritty.yml
 #cool color schemes: https://gogh-co.github.io/Gogh/
+#current scheme: Everblush
 
 colors:
   primary:
