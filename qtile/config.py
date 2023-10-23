@@ -95,6 +95,10 @@ keys = [
     Key([mod], "f", lazy.spawn("rofi -show drun"), desc = "spawns rofi"),
     Key([mod], "l", lazy.spawn("code"), desc = "spawns vscode"),
     Key([mod], "k", lazy.spawn("nautilus"), desc = "spawns the Gnome File Manager"),
+
+    #Brightness
+    Key([], "XF86MonBrightnessUp", lazy.spawn("brightnessctl set +50")),
+    Key([], "XF86MonBrightnessDown", lazy.spawn("brightnessctl set 50-"))
 ]
 
 groups = [Group(i) for i in "123456789"]
