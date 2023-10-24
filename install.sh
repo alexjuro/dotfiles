@@ -8,3 +8,4 @@ mkdir ~/.config/picom
 mkdir ~/.config/rofi
 
 chmod u+x ./copyConfig.sh
+chmod u+x ./retroarch/retroarch_install.sh
