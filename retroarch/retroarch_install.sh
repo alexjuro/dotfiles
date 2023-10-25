@@ -8,3 +8,4 @@ mkdir ~/Documents/games
 
 #copy the retroarch.cfg
 #go to online updater and update assets
+#watch https://www.youtube.com/watch?v=RwGmB9S0zEs
