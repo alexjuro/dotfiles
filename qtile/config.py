@@ -36,7 +36,7 @@ from libqtile.utils import guess_terminal
 colors = {
     "black": "#141414",
     "white": "#ffffff",
-    "accent": "#9b80c3",
+    "accent": "#d4a34d",
 }
 
 mod = "mod4"
@@ -220,7 +220,7 @@ screens = [
             # border_width=[2, 0, 2, 0],  # Draw top and bottom borders
             # border_color=["ff00ff", "000000", "ff00ff", "000000"]  # Borders are magenta
         ),
-        wallpaper= '~/.config/qtile/moon.png',
+        wallpaper= '~/.config/qtile/solar.jpg',
         wallpaper_mode= 'fill',
     ),
 ]
