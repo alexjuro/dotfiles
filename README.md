@@ -5,10 +5,11 @@
 1. install with `archinstall`
 2. when asked, select:
     - `ext4`
-    - `no home`
-    - `no swap`
+    - `home`
+    - `swap`
     - `Gnome`
     - `PulseAudio`
+    - linux zen
     - `NetworkManager`
 
 ## installing the config
